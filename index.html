@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Veronica Pillay</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="https://aforalpha.club/img/vladcaye-32x32.png">
+  </head>
+  
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.bgimg {
+  background-image: url('http://dev.vladimircayemitte.com/veronica-pillay/img/vp-bg.png');
+  background-color: #D22D2D;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.16rem;
+}
+  
+/* default: assume desktop first */
+.hide-on-mobile {
+  display: block;
+}
+.show-on-mobile {
+  display: none;
+}
+
+/* when the viewport is small (e.g. max-width: 785px), swap them */
+@media (max-width: 785px) {
+  .hide-on-mobile {
+    display: none !important;  /* hide on phones */
+  }
+  .show-on-mobile {
+    display: block !important; /* show on phones */
+  }
+  
+  img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border:3px solid #D22D2D;
+  }
+  
+  .coming-soon-bottom {
+  display: none !important;
+  }
+  
+  #storyBtn {
+  display: none !important;
+  }
+  
+  .divStyle-inner-mobile {
+  display: block !important;
+  }
+  .divStyle-inner {
+  display: none !important;
+  }
+  
+}
+  
+/* when the viewport is small (e.g. max-width: 412px), swap them */
+@media (max-width: 412px) {
+  .hide-on-mobile {
+    display: none !important;  /* hide on phones */
+  }
+  .show-on-mobile {
+    display: block !important; /* show on phones */
+  }
+  
+  img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border:3px solid #D22D2D;
+  }
+  
+  .coming-soon-bottom {
+  display: block !important;
+  font-size: 1.16rem;
+  background-color: #D22D2D;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  }
+  
+  #storyBtn {
+  display: block !important;
+  font-size: 1.16rem;
+  background-color: #D22D2D;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .divStyle {
+  display: none !important;
+  }
+  .divStyle-inner-mobile {
+  display: none !important;
+  }
+  .divStyle-inner {
+  display: none !important;
+  }
+  
+}
+  
+.coming-soon-bottom {
+  display: none !important;
+  }
+  
+.read-more {
+  display: inline-block !important;
+  font-size: 1rem;
+  color: white;
+  background-color: #D22D2D;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  }
+
+  #storyBtn {
+  display: none;
+  }
+  
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  font-size:12px;
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+  
+h1 {
+  font-family: Montserrat, sans-serif;  
+  }
+  
+p {
+  font-family: Montserrat, sans-serif;
+  font-size: .85rem;
+  line-height: 1.6
+  }
+
+
+  
+.divStyle {
+  background-color: #D22D2D;
+  opacity: 95%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  }
+
+.divStyle-inner {
+  color: white;
+  max-width: 760px;
+  min-width: 90%
+  }
+  
+.divStyle-inner-mobile {
+  display: none;
+  }
+  
+.btnbig {
+  background-color:#D22D2D;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:10px;
+  padding-right:10px;
+  margin:auto;
+  color:black;
+  border-radius: 5px;
+}
+
+a:link {
+  color: #D22D2D;
+  text-decoration:none;
+}
+
+a:visited {
+  color: #D22D2D;
+  text-decoration:none;
+}
+
+a:hover {
+  color: white;
+  text-decoration:none;
+}
+
+a:active {
+  color: #D22D2D;
+  text-decoration:none;
+}
+
+img {
+  border-radius: 50%;
+  border:3px solid #D22D2D;
+}
+  
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  opacity: 95%;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #D22D2D;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 1rem;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="middle">
+	<img id="bio" src="http://dev.vladimircayemitte.com/veronica-pillay/img/Veronica%20Pillay.jpg" width="250px" height="250px" alt="">
+	<p><small style="font-size:.9rem;">Veronica Pillay | Website coming soon.</small></p>
+	<p class="coming-soon-bottom"></p>
+	<story id="storyBtn" style="cursor: pointer;">Read My Story</story>
+	  <div class="divStyle">
+		<div class="divStyle-inner">
+			<p>Hi, I'm Veronica, real estate investor since 2010 and your behind-the-scenes real estate strategist.
+Over the years, I've learned how to spot hidden gems, jump on opportunities others overlooked, and watch those properties grow in value. I'm all in, and help buyers and sellers like you do the same.</p>
+	<p>Whether you're buying your first place, looking for your next investment, or just feeling curious about real estate, I've got your back with real talk, real tips, and honest support.</p>
+	<p>I'm building something new and to make it truly useful, I'd love your input.
+Take this quick survey to share your experience and help shape what's next. And if you ever want to chat or need help, just reach out: info@veronicapillay.com</p>
+		</div>
+		
+		
+		<div class="divStyle-inner-mobile">
+			<p>Hi, I'm Veronica, real estate investor since 2010 and your behind-the-scenes real estate strategist.
+Over the years, I've learned how to spot hidden gems, jump on opportunities others overlooked, and watch those properties grow in value. I'm all in, and help buyers and sellers like you do the same.</p>
+		</div>
+	</div>
+	<p><button id="learnMoreBtn" class="read-more">LEARN MORE</button></p>
+  </div>
+  <div class="bottomleft">
+    <p>Questions? <a href="https://www.AforAlpha.club">AforAlpha.club</a></p>
+  </div>
+</div>
+
+  
+<!-- The Modal -->
+<div id="learnMore" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><h3>Before real estate stole my heart, I lived a few different lives.</h3></p>
+
+<h3>From Politics to PR</h3>
+<p>I graduated in 2010 with a degree in Political Science, then followed it up with a postgrad diploma in Public Relations and Management from McGill.</p>
+
+<h3>A Career in Marketing</h3>
+<p>From there, I dove headfirst into the world of marketing, 15 years of it! I spent 7 of those years leading incredible teams as Head of Marketing, including one of my proudest roles: launching and leading the marketing for Qatar Airways in Montreal for six amazing years. I’ve also had the joy of working in public service with the City of Montreal and spent a few fast-paced years in SaaS. I'm now looking forward to apply my mark-tech experience to the world of real estate.</p>
+  </div>
+
+</div>
+  
+  
+  
+  
+<div id="my-story" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Hi, I'm Veronica, real estate investor since 2010 and your behind-the-scenes real estate strategist.
+Over the years, I've learned how to spot hidden gems, jump on opportunities others overlooked, and watch those properties grow in value. I'm all in, and help buyers and sellers like you do the same.</p>
+	<p>Whether you're buying your first place, looking for your next investment, or just feeling curious about real estate, I've got your back with real talk, real tips, and honest support.</p>
+	<p>I'm building something new and to make it truly useful, I'd love your input.
+Take this quick survey to share your experience and help shape what's next. And if you ever want to chat or need help, just reach out: info@veronicapillay.com</p>
+  </div>
+</div>
+  
+  
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '681d32f828a1a8f479371cfd' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        }).then(() => {
+  setTimeout(function () {
+    window.voiceflow.chat.open();
+  }, 1000)
+});
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+  
+  
+// Get the modal
+var modal = document.getElementById("learnMore");
+
+// Get the button that opens the modal
+var btn = document.getElementById("learnMoreBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  
+  if (event.target == story) {
+    story.style.display = "none";
+  }
+}
+  
+  
+
+var story = document.getElementById("my-story");
+var storyBtn = document.getElementById("storyBtn");
+var storySpan = document.getElementsByClassName("close")[1];
+
+storyBtn.onclick = function() {
+  story.style.display = "block";
+}
+
+storySpan.onclick = function() {
+  story.style.display = "none";
+}
+
+</script>
+  
+</body>
+</html>
